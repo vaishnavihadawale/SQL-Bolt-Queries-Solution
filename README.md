@@ -78,3 +78,10 @@ Q3 List all buildings and the distinct employee roles in each building (includin
 Select distinct building_name, role from Buildings left join Employees on buildings.building_name=employee.building ;
 
 
+# Lesson 7
+
+Q1 
+
+
+
+#
