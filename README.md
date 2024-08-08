@@ -41,7 +41,19 @@ SELECT Title FROM movies where Director!='John Lasseter';
 Q4 Find all the WALL-* movies 
 Select * from Movies where Title like 'Wall-%';
 
+# Lesson 4
 
+Q1 List all directors of Pixar movies (alphabetically), without duplicates 
+SELECT Distinct Director FROM Movies order by director asc;
+
+Q2 List the last four Pixar movies released (ordered from most recent to least) 
+SELECT * FROM Movies order by Year desc limit 4 ;
+
+Q3 List the first five Pixar movies sorted alphabetically
+SELECT Title  FROM Movies order by Title asc limit 5 ;
+
+Q4 List the next five Pixar movies sorted alphabetically 
+SELECT Title  FROM Movies order by Title asc limit 5 offset 5 ;
 
 
 
