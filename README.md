@@ -66,4 +66,15 @@ SELECT id,title,  international_sales FROM movies JOIN boxoffice ON movies.id = 
 Q3 List all the movies by their ratings in descending order
 SELECT title,rating from movies join boxoffice on movies.id = boxoffice.movie_id order by rating desc;
 
+# Lesson 6
+
+Q1 Find the list of all buildings that have employees 
+Select distinct building from employees;
+
+Q2 Find the list of all buildings and their capacity
+Select building_name, capacity from Buildings;
+
+Q3 List all buildings and the distinct employee roles in each building (including empty buildings)
+Select distinct building_name, role from Buildings left join Employees on buildings.building_name=employee.building ;
+
 
