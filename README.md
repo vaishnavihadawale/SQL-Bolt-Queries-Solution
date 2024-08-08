@@ -55,5 +55,15 @@ SELECT Title  FROM Movies order by Title asc limit 5 ;
 Q4 List the next five Pixar movies sorted alphabetically 
 SELECT Title  FROM Movies order by Title asc limit 5 offset 5 ;
 
+# Lesson 5
+
+Q1 Find the domestic and international sales for each movie 
+SELECT title, domestic_sales, international_sales FROM movies JOIN boxoffice ON movies.id = boxoffice.movie_id;
+
+Q2 Show the sales numbers for each movie that did better internationally rather than domestically
+SELECT id,title,  international_sales FROM movies JOIN boxoffice ON movies.id = boxoffice.movie_id where international_sales>domestic_sales;
+
+Q3 List all the movies by their ratings in descending order
+SELECT title,rating from movies join boxoffice on movies.id = boxoffice.movie_id order by rating desc;
 
 
