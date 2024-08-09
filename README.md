@@ -111,6 +111,25 @@ Q2 Find the names of the buildings that hold no employees
 
 SELECT  building_nameFROM buildings LEFT JOIN employees ON building_name = building WHERE name IS NULL;
 
+# Lesson 8
+
+Q1 Find the longest time that an employee has been at the studio 
+
+Select max(years_employed) FROM employees;
+
+Q2 For each role, find the average number of years employed by employees in that role 
+
+select role , avg(years_employed) from employees group by role
+
+Q3 Find the total number of employee years worked in each building 
+
+Select building, sum(total_years_employed) as total_number_of_years from employees group by building
+
+# Lesson 9
+
+
+
+
 
 
 
