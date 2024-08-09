@@ -80,8 +80,12 @@ Select distinct building_name, role from Buildings left join Employees on buildi
 
 # Lesson 7
 
-Q1 
+Q1 Find the name and role of all employees who have not been assigned to a building
+SELECT role ,name FROM employees where building is null;
+
+Q2 Find the names of the buildings that hold no employees 
+SELECT  building_nameFROM buildings LEFT JOIN employees ON building_name = building WHERE name IS NULL;
 
 
 
-#
+
