@@ -1,6 +1,7 @@
 # SQL-Bolt-Queries-Solution 
 # Lesson 1
 Q1 Find the title of each film
+
 Select Title from Movies;
 
 Q2 Find the director of each film
