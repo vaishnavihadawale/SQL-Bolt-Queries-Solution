@@ -1,4 +1,5 @@
 # SQL-Bolt-Queries-Solution 
+
 # Lesson 1
 Q1 Find the title of each film
 
@@ -126,6 +127,30 @@ Q3 Find the total number of employee years worked in each building
 Select building, sum(total_years_employed) as total_number_of_years from employees group by building
 
 # Lesson 9
+
+Q1 Find the number of Artists in the studio (without a HAVING clause)
+
+Select role, COUNT(*) as Number_of_artists from employees where role = "Artist";
+
+Q2 Find the number of Employees of each role in the studio 
+Select  role, COUNT(*) as Number_of_artists from employees  group by role;
+
+Q3 Find the total number of years employed by all Engineers 
+Select role, SUM(years_employed) from employees  group by role having role = "Engineer";
+
+# Lesson 10
+
+Q1 Find the number of movies each director has directed 
+
+Select director, count(id)  as num_of_movies from movies group by director;
+
+Q2 Find the total domestic and international sales that can be attributed to each director
+
+Select director, SUM(domestic_sales + international_sales) as Cumulative_sales_from_all_movies from movies inner join boxoffice on movies.id = boxoffice.movie_id
+group by director;
+
+
+
 
 
 
