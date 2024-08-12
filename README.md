@@ -203,6 +203,14 @@ Q2 Add another column named Language with a TEXT data type to store the language
 
 Alter table Movies add Language TEXT default English ;
 
+# Lesson 16
+
+Q1 We've sadly reached the end of our lessons, lets clean up by removing the Movies table 
+
+DROP Table Movies;
+
+Q2 And drop the BoxOffice table as well
+ Drop Table BoxOffice;
 
 
 
