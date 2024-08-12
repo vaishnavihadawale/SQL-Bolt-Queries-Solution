@@ -159,6 +159,20 @@ Q2 Toy Story 4 has been released to critical acclaim! It had a rating of 8.7, an
 
 INSERT INTO BoxOffice values(4,8.7, 340000000, 270000000);
 
+# Lesson 12
+
+Q1 The director for A Bug's Life is incorrect, it was actually directed by John Lasseter
+
+UPDATE Movies set Director='John Lasseter' where id=2;
+
+Q2 The year that Toy Story 2 was released is incorrect, it was actually released in 1999 
+
+UPDATE Movies set Year=1999 where Title='Toy Story 2';
+
+Q3 Both the title and director for Toy Story 8 is incorrect! The title should be "Toy Story 3" and it was directed by Lee Unkrich
+
+UPDATE movies SET title = "Toy Story 3", director = "Lee Unkrich" WHERE id = 11;
+
 
 
 
