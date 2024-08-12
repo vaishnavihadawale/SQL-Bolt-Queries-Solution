@@ -173,6 +173,30 @@ Q3 Both the title and director for Toy Story 8 is incorrect! The title should be
 
 UPDATE movies SET title = "Toy Story 3", director = "Lee Unkrich" WHERE id = 11;
 
+# Lesson 13
+
+Q1 This database is getting too big, lets remove all movies that were released before 2005. 
+
+Delete from Movies where Year<2005;
+
+Q2 Andrew Stanton has also left the studio, so please remove all movies directed by him.
+
+DELETE FROM movies where director = "Andrew Stanton";
+
+# Lesson 14
+
+Q1 Create a new table named Database with the following columns:
+– Name A string (text) describing the name of the database
+– Version A number (floating point) of the latest version of this database
+– Download_count An integer count of the number of times this database was downloaded
+This table has no constraints.
+
+CREATE TABLE Database(
+Name varchar(10),
+Version float
+Download_count int
+)
+
 
 
 
