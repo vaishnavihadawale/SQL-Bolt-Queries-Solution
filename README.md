@@ -193,6 +193,16 @@ This table has no constraints.
 
 CREATE TABLE Database(Name varchar(10), Version float, Download_count int) ;
 
+# Lesson 15
+
+Q1 Add a column named Aspect_ratio with a FLOAT data type to store the aspect-ratio each movie was released in.
+
+Alter table Movies add Aspect_ratio float ;
+
+Q2 Add another column named Language with a TEXT data type to store the language that the movie was released in. Ensure that the default for this language is English.
+
+Alter table Movies add Language TEXT default English ;
+
 
 
 
