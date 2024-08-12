@@ -149,6 +149,17 @@ Q2 Find the total domestic and international sales that can be attributed to eac
 Select director, SUM(domestic_sales + international_sales) as Cumulative_sales_from_all_movies from movies inner join boxoffice on movies.id = boxoffice.movie_id
 group by director;
 
+# Lesson 11
+
+Q1 Add the studio's new production, Toy Story 4 to the list of movies (you can use any director)
+
+INSERT INTO Movies values(4,'Toy Story 4', 'Jehanabad',1987,96);
+
+Q2 Toy Story 4 has been released to critical acclaim! It had a rating of 8.7, and made 340 million domestically and 270 million internationally. Add the record to the BoxOffice table.
+
+INSERT INTO BoxOffice values(4,8.7, 340000000, 270000000);
+
+
 
 
 
