@@ -191,11 +191,7 @@ Q1 Create a new table named Database with the following columns:
 – Download_count An integer count of the number of times this database was downloaded
 This table has no constraints.
 
-CREATE TABLE Database(
-Name varchar(10),
-Version float
-Download_count int
-)
+CREATE TABLE Database(Name varchar(10), Version float, Download_count int) ;
 
 
 
