@@ -211,7 +211,7 @@ DROP Table Movies;
 
 Q2 And drop the BoxOffice table as well
 
- Drop Table BoxOffice;
+Drop Table BoxOffice;
 
 
 
